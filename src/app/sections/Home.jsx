@@ -4,7 +4,6 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import CircleIcon from '@mui/icons-material/Circle';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import Splitting from 'splitting';
 import "splitting/dist/splitting.css";
 import { useReady } from '../globalContext';
 
