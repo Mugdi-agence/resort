@@ -47,7 +47,7 @@ const Nav = forwardRef(function Nav(props, ref) {
                 <span className="nav-logo-bar"></span>
                 <div>
                     <p className="nav-logo-small">UPON</p>
-                    <p className="nav-logo-big">VOYAGES</p>
+                    <p className="nav-logo-big">HOTEL</p>
                 </div>
             </div>
 

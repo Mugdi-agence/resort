@@ -16,7 +16,7 @@ export default function Footer() {
                             <span className="footer-logo-bar"></span>
                             <div>
                                 <p className="footer-logo-small">UPON</p>
-                                <p className="footer-logo-big">VOYAGES</p>
+                                <p className="footer-logo-big">HOTEL</p>
                             </div>
                         </div>
                         <p className="footer-tagline">Explore. Breathe. Leave transformed.</p>
