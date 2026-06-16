@@ -34,21 +34,22 @@ export default function CallToAction() {
                 <div className="cta-overlay"></div>
 
                 <div className="cta-content">
-                    <h2 className="cta-title">Ready to go? We'll handle the rest.</h2>
-                    <p className="cta-subtitle">Your next memory begins here—simple, safe, and 100% personalized.</p>
+                    <h2 className="cta-title">Experience True Luxury. Your Personal Escape Awaits.</h2>
+                    <p className="cta-subtitle">Let us craft an unforgettable stay—effortless, private, and tailored to you.</p>
 
                     <div className="cta-bottom">
                         <p className="cta-text">
-                            Whether you dream of a relaxing getaway, an off-the-beaten-path adventure, or a family trip, our team crafts a tailor-made itinerary and takes care of every detail: flights, accommodations, transfers, and curated activities. Request your free quote or speak directly with an advisor.
+                            Dreaming of a serene beachfront suite, private spa retreats, or exclusive gourmet dining? Our team will curate every element of your luxurious getaway: bespoke accommodations, airport transfers, premium experiences, and concierge at your service. Reserve your complimentary consultation or speak directly with a resort specialist now.
                         </p>
 
                         <div className="cta-buttons">
-                            <a href="#" className="button-primary" ref={btnRef} onMouseLeave={() => onButtonLeave(btnRef)} onMouseEnter={() => onButtonEnter(btnRef)}>Contact an advisor</a>
-                            <a href="#" className="button-secondary" ref={btn1Ref} onMouseLeave={() => onButtonLeave(btn1Ref)} onMouseEnter={() => onButtonEnter(btn1Ref)}>Request my personalized quote</a>
+                            <a href="#" className="button-primary" ref={btnRef} onMouseLeave={() => onButtonLeave(btnRef)} onMouseEnter={() => onButtonEnter(btnRef)}>Contact a Specialist</a>
+                            <a href="#" className="button-secondary" ref={btn1Ref} onMouseLeave={() => onButtonLeave(btn1Ref)} onMouseEnter={() => onButtonEnter(btn1Ref)}>Request My Tailored Offer</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+   
     );
 }

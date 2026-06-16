@@ -21,10 +21,10 @@ export default function Stats() {
     }, []);
 
     const stats = [
-        { number: "10+", label: "years of experience" },
-        { number: "5,000+", label: "happy clients" },
-        { number: "98%", label: "satisfaction rate (2024 survey)" },
-        { number: "50+", label: "partner hotels" },
+        { number: "320", label: "luxury rooms & suites" },
+        { number: "6", label: "award-winning restaurants" },
+        { number: "3", label: "private beaches" },
+        { number: "15K+", label: "guests welcomed last year" },
     ];
 
     function onButtonEnter(ref) {
@@ -49,6 +49,13 @@ export default function Stats() {
         });
     }
 
+    const testimonials = [
+        {
+            name: "— Alice M., Paris",
+            quote: "\"The spa and private beach were incredible! We felt truly pampered throughout our stay.\""
+        },
+    ];
+
     return (
         <section className="stats-section">
             <div className="stats-list">
@@ -65,15 +72,19 @@ export default function Stats() {
 
                 <a href="#" className="stats-contact" ref={btnRef} onMouseLeave={() => onButtonLeave(btnRef)} onMouseEnter={() => onButtonEnter(btnRef)}>Contact</a>
 
-                <div className="stats-testimonial">
-                    <div className="stats-testimonial-icon">
-                        <PersonIcon/>
+                {/* Affiche les témoignages pour resorts/hôtels */}
+                {testimonials.map((testimonial, idx) => (
+                    <div className="stats-testimonial" key={idx}>
+                        <div className="stats-testimonial-icon">
+                            <PersonIcon/>
+                        </div>
+                        <div className="stats-testimonial-text">
+                            <p className="stats-testimonial-name">{testimonial.name}</p>
+                            <p className="stats-testimonial-quote">{testimonial.quote}</p>
+                        </div>
                     </div>
-                    <div className="stats-testimonial-text">
-                        <p className="stats-testimonial-name">— Camille & Julien, Lyon</p>
-                        <p className="stats-testimonial-quote">"Perfect itinerary, impeccable service — we discovered places we never would have found on our own."</p>
-                    </div>
-                </div>
+                ))}
+           
             </div>
         </section>
     );
